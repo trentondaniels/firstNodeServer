@@ -34,42 +34,4 @@ http.createServer(function (req, res) {
             res.end(data);
         });
     }
-}).listen(3000);
-
-/*
- if(urlObj.pathname.indexOf("getcity") !=-1) {
-   // Execute the REST service 
-   console.log("In REST Service");
- }
-
-
-/*
-var myRe = new RegExp("^"+urlObj.query["q"]);
-console.log(myRe);
-*/
-
-/*
-  cities = data.toString().split("\n");
-  for(var i = 0; i < cities.length; i++) {
-    var result = cities[i].search(myRe);
-    if(result != -1) {
-      console.log(cities[i]);
-    }
-  }
-  */
-  
-  /*
-        var jsonresult = [];
-      for(var i = 0; i < cities.length; i++) {
-        var result = cities[i].search(myRe); 
-        if(result != -1) {
-          console.log(cities[i]);
-          jsonresult.push({city:cities[i]});
-        } 
-      }   
-      console.log(jsonresult);
-  */
-  
-  /*
-
-  */
+}).listen(3001);
